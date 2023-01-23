@@ -1,18 +1,43 @@
-body{
-  background-color: var(--grey);
+body {
+	background-color: var(--grey);
 }
 
-.container{
-  margin: 50px 5%;
-  height: 100vh; 
+.container {
+  display: flex;
+	margin: 50px 0;
+	/* height: 100vh; */
 }
 
 .box-container {
-	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.box {
-	width: 50%;
+.box-container1 {
+  width: 60%;
+	background-color: aqua;
+  margin: 0 40px;
+}
+
+.box-container1 .box {
+	width: calc(100% / 3);
+  height: auto;
+  padding: 15px;
+  
+}
+.box-container1 .titre {
+	width: 100%;
+  padding: 10px;
+}
+
+
+
+.box-container2 {
+  margin-right: 40px;
+	width: 40%;
+	background-color: aquamarine;
+}
+.box-container2 .box {
+  height: auto;
 }
