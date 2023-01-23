@@ -1,58 +1,60 @@
 body {
 	background-color: var(--grey);
-	font-family: "Helvetica", sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	height: 100vh;
 }
 
 p{
+	font-family: 'Helvetica', sans-serif;
 	font-size: 18px;
+	color: var(--dark);
 }
 
 .container {
-  display: flex;
+	display: flex;
 	margin: 50px 0;
-	/* height: 100vh; */
 }
 
 .box-container {
 	display: flex;
 	justify-content: space-around;
-  flex-wrap: wrap;
+	flex-wrap: wrap;
 	height: auto;
 }
 
 /*------- CONTAINER 1 -------*/
 .box-container1 {
-  width: 55%;
-  margin: 0 40px;
+	width: 55%;
+	margin: 0 40px;
 	background-color: var(--white);
 	padding: 15px;
 }
 .box-container1 .box {
-  display: flex;
+	display: flex;
 	width: calc(100% / 3);
-  padding: 30px 15px;
-  height: auto;
+	padding: 30px 15px;
+	height: auto;
 }
 .box-container1 .titre {
 	width: 100%;
-  padding: 5px;
+	padding: 5px;
+	color: var(--dark);
 }
 .box-container1 .box h1 {
 	padding: 0 15px;
 	font-size: 50px;
+	color: var(--dark);
 }
-
 
 /*------- CONTAINER 2 -------*/
 .box-container2 {
 	display: flex;
 	width: 45%;
 	background-color: var(--white);
-  margin-right: 40px;
+	margin-right: 40px;
 }
 
-.box-Entrainement{
+.box-Entrainement {
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -60,7 +62,7 @@ p{
 	background-color: var(--grey);
 }
 
-#Entrainement{
+#Entrainement {
 	width: 350px;
 	height: 120px;
 	border-radius: 30px;
@@ -70,25 +72,29 @@ p{
 	background-color: var(--white);
 }
 
-.box-container2 .box{	
+.box-container2 .box {
 	display: flex;
 	width: 50%;
-  padding: 30px 10px;
+	padding: 30px 10px;
 }
 
-.box-container2 p{	
+.box-container2 p {
 	text-align: justify;
 }
 
-.box-container2 .logo_esj{
+.box-container2 .logo_esj {
 	width: 25px;
 	height: 25px;
 	margin: 5px 10px;
 }
 
-.box-container2 .news_photo{
+.box-container2 .news_photo {
 	margin: 0 10px;
 	width: 100px;
 	height: 100px;
 	object-fit: cover;
+}
+
+/*------- SECTIONS -------*/
+.sections {
 }

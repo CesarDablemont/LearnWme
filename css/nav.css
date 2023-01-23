@@ -79,6 +79,7 @@ nav {
   position: absolute;
   bottom: -2px;
   margin: 0 10px;
+	color: var(--dark);
 }
 
 .list .list-link::after { /* sytle aprés le lien */
