@@ -1,0 +1,98 @@
+@font-face {
+	font-family: 'Helvetica rounded';
+	src: url('/font/helvetica-rounded-bold-5871d05ead8de.otf') format('truetype');
+}
+
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+  --main: #D80228;
+
+  --white: #FFFFFF;
+  --grey: #F5F3F1;
+  --grey2: #D9D9D9;
+  --dark: #1D2424;
+
+  --green: #53DA79;
+  --red: #EF7272;
+}
+
+/*----------- NAV --------- */
+nav {
+	width: auto;
+	height: 100px;
+	background: var(--white); /* fond de la couleur de la variable orange */
+	position: sticky;	/* reste collé en haut de la page */
+	top: 0;		/* reste collé en haut de la page */
+	transition: all 0.3s ease-out;
+	z-index: 1;	/* passe au dessus des autres elements */
+  display: flex;
+  justify-content: center;
+  border-bottom: outset 1px var(--dark);
+}
+
+#logo{
+  position: absolute;
+  left: 50px;
+  font-size: 50px;
+  font-family: 'Helvetica rounded', sans-serif;
+}
+#logo-link{
+  text-decoration: none;
+  color: var(--main);
+}
+
+.list {
+  width: 95%;
+	height: 100%;
+	list-style-type: none;
+	display: flex;
+  justify-content: flex-end;
+	align-items: center;
+}
+
+.list .list-item {
+	margin: 0 50px;
+	transition: .4s ease-out;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.list .list-item:hover{
+	transform: scale(1.05);
+	transition: .4s ease-out;
+}
+
+.list .list-link {
+	position: relative;
+	color: var(--dark);
+	text-decoration: none;
+	text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.list .list-link .icon{
+  position: absolute;
+  bottom: -2px;
+  margin: 0 10px;
+}
+
+.list .list-link::after { /* sytle aprés le lien */
+	content: '';	/* on veut ajouter une ligne pas du contenu alors on laisse vide*/
+	position: absolute;
+	bottom: 0;
+	left: 50%;	/* animation commence au millieu */
+	width: 0%;	/* avec une taille de 0 */
+	height: 2px;	/* ligne de 2px d'epaiseur */
+	background: var(--dark);
+	transition: 0.4s ease-out; /* la transision se fait sur 0.4s pour pouvoir la voir */
+}
+
+.list .list-link:hover::after {
+	width: 100%;	/* animation fini par faire toute la taille du text */
+	left: 0;	/* et on enleve le décalage vers la droite */
+}

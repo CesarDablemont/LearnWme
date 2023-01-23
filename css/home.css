@@ -1,0 +1,18 @@
+body{
+  background-color: var(--grey);
+}
+
+.container{
+  margin: 50px 5%;
+  height: 100vh; 
+}
+
+.box-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.box {
+	width: 50%;
+}
