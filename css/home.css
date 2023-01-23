@@ -1,6 +1,11 @@
 body {
 	background-color: var(--grey);
 	font-family: "Helvetica", sans-serif;
+	height: 100vh;
+}
+
+p{
+	font-size: 18px;
 }
 
 .container {
@@ -23,11 +28,10 @@ body {
 	background-color: var(--white);
 	padding: 15px;
 }
-
 .box-container1 .box {
   display: flex;
 	width: calc(100% / 3);
-  padding: 15px;
+  padding: 30px 15px;
   height: auto;
 }
 .box-container1 .titre {
@@ -36,7 +40,7 @@ body {
 }
 .box-container1 .box h1 {
 	padding: 0 15px;
-	font-size: 45px;
+	font-size: 50px;
 }
 
 
@@ -69,19 +73,22 @@ body {
 .box-container2 .box{	
 	display: flex;
 	width: 50%;
-  padding: 15px;
+  padding: 30px 10px;
 }
 
+.box-container2 p{	
+	text-align: justify;
+}
 
-
-
-
-
-
-
-
-.logo_esj{
+.box-container2 .logo_esj{
 	width: 25px;
 	height: 25px;
-	margin: 5px;
+	margin: 5px 10px;
+}
+
+.box-container2 .news_photo{
+	margin: 0 10px;
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
 }
