@@ -27,7 +27,7 @@
 /*----------- NAV --------- */
 nav {
 	width: auto;
-	height: 100px;
+	height: 80px;
 	background: var(--white); /* fond de la couleur de la variable orange */
 	position: sticky; /* reste collé en haut de la page */
 	top: 0; /* reste collé en haut de la page */
@@ -41,7 +41,7 @@ nav {
 #logo {
 	position: absolute;
 	left: 50px;
-	font-size: 50px;
+	font-size: 40px;
 }
 #logo-link {
 	text-decoration: none;
@@ -51,7 +51,6 @@ nav {
 
 .list {
 	width: 95%;
-	height: 100%;
 	list-style-type: none;
 	display: flex;
 	justify-content: flex-end;
@@ -62,7 +61,7 @@ nav {
 	margin: 0 20px;
 	transition: 0.4s ease-out;
 	text-transform: uppercase;
-	font-size: 22px;
+	font-size: 18px;
 }
 
 .list .list-item:hover {
@@ -73,7 +72,7 @@ nav {
 .list .list-item button {
 	border: none;
 	background-color: transparent;
-	font-size: 22px;
+	font-size: 16px;
 	text-transform: uppercase;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -98,15 +97,14 @@ nav {
 }
 
 .list .list-link::after {
-	/* sytle aprés le lien */
-	content: ''; /* on veut ajouter une ligne pas du contenu alors on laisse vide*/
+	content: '';
 	position: absolute;
 	bottom: 0;
-	left: 50%; /* animation commence au millieu */
-	width: 0%; /* avec une taille de 0 */
-	height: 2px; /* ligne de 2px d'epaiseur */
+	left: 50%;
+	width: 0%;
+	height: 1px;
 	background: var(--dark);
-	transition: 0.4s ease-out; /* la transision se fait sur 0.4s pour pouvoir la voir */
+	transition: 0.4s ease-out;
 }
 
 .list .list-link:hover::after {

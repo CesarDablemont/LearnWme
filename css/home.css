@@ -1,23 +1,36 @@
+h1,h2,h3,h4,h5,h6 {
+	color: var(--dark);
+	font-family: 'The Antiqua B standard', Georgia, Droid-serif, serif;
+}
+p {
+	font-size: 13px;
+	color: var(--dark);
+	font-family: 'Helvetica', Helvetica, Arial, Roboto, sans-serif;
+}
+a {
+	text-decoration: none;
+	color: var(--dark);
+}
+a:hover {
+	color: var(--main);
+}
+.journalTag {
+	width: 25px;
+	height: 25px;
+	margin: 5px 5px 5px 0;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------ CORPS -----------------------------------------------*/
 body {
 	background-color: var(--grey);
-	font-family: "Helvetica",Helvetica,Arial,Roboto,sans-serif;
+	font-family: 'Helvetica', Helvetica, Arial, Roboto, sans-serif;
 	/* font-family: "Helvetica Neue",Helvetica,Arial,Roboto,sans-serif; */
 }
 
-
-h1, h2, h3, h4, h5, h6, p{
-	color: var(--dark);
-	font-family: "Helvetica",Helvetica,Arial,Roboto,sans-serif;
-}
-
-p{
-	font-size: 16px;
-}
-
-
 .container {
 	display: flex;
-	margin: 50px 0;
+	margin: 30px 0;
 }
 
 .box-container {
@@ -27,76 +40,70 @@ p{
 	height: auto;
 }
 
-/*------- CONTAINER 1 -------*/
+/*-------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------- CONTAINER 1 ---------------------------------------------*/
 .box-container1 {
 	width: 55%;
-	margin: 0 40px;
+	margin: 0 30px;
 	background-color: var(--white);
 	padding: 15px;
 }
 .box-container1 .box {
 	display: flex;
 	width: calc(100% / 3);
-	padding: 30px 15px;
+	padding: 20px 10px;
 	height: auto;
 }
 .box-container1 .titre {
 	width: 100%;
+	/* height: 50px; */
 	padding: 5px;
 	color: var(--dark);
-	font-family: "The Antiqua B standard",Georgia,Droid-serif,serif;
+	font-family: 'The Antiqua B standard', Georgia, Droid-serif, serif;
 }
 .box-container1 .box h1 {
-	padding: 0 15px;
+	padding: 0 10px;
 	font-size: 50px;
 	color: var(--dark);
-	font-family: "The Antiqua B standard",Georgia,Droid-serif,serif;
+	font-family: 'The Antiqua B standard', Georgia, Droid-serif, serif;
 }
 
-/*------- CONTAINER 2 -------*/
+/*-------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------- CONTAINER 2 ---------------------------------------------*/
 .box-container2 {
 	display: flex;
 	width: 45%;
 	background-color: var(--white);
-	margin-right: 40px;
+	margin-right: 30px;
 }
-
 
 #box-Entrainement {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 	background-color: var(--grey);
 }
-
 #Entrainement {
-	width: 350px;
-	height: 120px;
+	width: 300px;
+	height: 100px;
 	border-radius: 30px;
 	border: solid 3px var(--main);
-	font-size: 42px;
+	font-size: 32px;
 	color: var(--main);
 	background-color: var(--white);
 }
-#Entrainement:hover{
+#Entrainement:hover {
 	background-color: var(--main-alpha);
 }
 
 .box-container2 .box {
 	display: flex;
 	width: 50%;
-	padding: 30px 10px;
+	padding: 20px 10px;
 }
-
 .box-container2 p {
 	text-align: justify;
-}
-
-.box-container2 .logo_esj {
-	width: 25px;
-	height: 25px;
-	margin: 5px 10px;
 }
 
 .box-container2 .news_photo {
@@ -106,39 +113,47 @@ p{
 	object-fit: cover;
 }
 
-/*------- SECTIONS -------*/
+/*------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------- SECTIONS ----------------------------------------------*/
+
 .section-container {
 	width: 80%;
-	margin: 80px 10%;
+	margin: 40px 10%;
 	padding: 20px;
 	background-color: var(--white);
 }
 
-.section{
+.section {
 	border-top: solid 2px var(--dark);
 	width: 100%;
 	min-height: 100px;
+	margin-bottom: 100px;
 }
-
-.section h1{
+.section h1 {
 	width: 100%;
 	padding-top: 15px;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 }
 
-.section-sousContainer{
-	display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: auto auto; 
-  gap: 20px 40px; 
+.section-sousContainer {
+	display: grid;
+	grid-auto-columns: 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto;
+	gap: 40px;
 }
 
-.section-box{
+.section-box {
 	min-height: 100px;
 	height: auto;
 }
-.section-box img{
+.section-box span{
+	display: flex;
+}
+.section-box h3{
+	margin-top: 7px;
+}
+.section-box .article-img {
 	width: 100%;
 	height: 200px;
 	object-fit: cover;
