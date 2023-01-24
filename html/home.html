@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/css/nav.css">
   <link rel="stylesheet" href="/css/home.css">
   <link rel="stylesheet" href="/css/footer.css">
+  <script defer src="/js/nav.js"></script>
 </head>
 
 <body>
@@ -19,32 +20,36 @@
       <li id="logo"><a id="logo-link" href="#">LearnWme</a></li>
 
       <li class="list-item">
-        <a href="#" class="list-link">Toute l'actus
+        <button class="list-link dropbtn" onclick="toggle('showActus')">Toute l'actus
           <svg class="icon" width="32px" height="32px" xmlns="http://www.w3.org/2000/svg"
             fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
               d="M19 9l-7 7-7-7"></path>
           </svg>
-        </a>
+        </button>
       </li>
+
       <li class="list-item">
-        <a href="#" class="list-link">Vie quotidienne
+        <button class="list-link dropbtn" onclick="toggle('showVieQuotidienne')">Vie quotidienne
           <svg class="icon" width="32px" height="32px" xmlns="http://www.w3.org/2000/svg"
             fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
               d="M19 9l-7 7-7-7"></path>
           </svg>
-        </a>
+        </button>
       </li>
+
       <li class="list-item">
-        <a href="./Panier.html" class="list-link">Vidéo
+        <button class="list-link dropbtn" onclick="toggle('showVideo')">Vidéo
           <svg class="icon" width="32px" height="32px" xmlns="http://www.w3.org/2000/svg"
             fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
               d="M19 9l-7 7-7-7"></path>
           </svg>
-        </a>
+        </button>
       </li>
+
+
       <li class="list-item">
         <svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" fill="none"
           viewBox="0 0 24 24" stroke="currentColor">
@@ -53,6 +58,42 @@
         </svg>
       </li>
     </ul>
+
+
+    <div id="showActus" class="dropdown-content">
+      <span><h2>Tout l'actualité</h2></span>
+      <ul>
+        <li><a href="">1- International</a></li>
+        <li><a href="">2- Politique</a></li>
+        <li><a href="">3- Société</a></li>
+        <li><a href="">4- Sport</a></li>
+        <li><a href="">5- Planète</a></li>
+        <li><a href="">6- Sciences</a></li>
+        <li><a href="">7- Numérique</a></li>
+        <li><a href="">8- Santé</a></li>
+        <li><a href="">9- Disparitions</a></li>
+        <li><a href="">10- Podcasts</a></li>
+        <li><a href="">11- l'ESJ</a></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <div id="showVieQuotidienne" class="dropdown-content">
+      <ul>
+        <li><a href="">Link 1</a></li>
+        <li><a href="">Link 2</a></li>
+        <li><a href="">Link 3</a></li>
+      </ul>
+    </div>
+
+    <div id="showVideo" class="dropdown-content">
+      <ul>
+        <li><a href="">Link 1</a></li>
+        <li><a href="">Link 2</a></li>
+        <li><a href="">Link 3</a></li>
+      </ul>
+    </div>
+
   </nav>
 
 
