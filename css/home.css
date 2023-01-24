@@ -1,11 +1,12 @@
 body {
 	background-color: var(--grey);
-	font-family: 'Helvetica', sans-serif;
+	font-family: "Helvetica",Helvetica,Arial,Roboto,sans-serif;
+	/* font-family: "Helvetica Neue",Helvetica,Arial,Roboto,sans-serif; */
 	height: 100vh;
 }
 
 p{
-	font-family: 'Helvetica', sans-serif;
+	font-family: "Helvetica",Helvetica,Arial,Roboto,sans-serif;
 	font-size: 18px;
 	color: var(--dark);
 }
@@ -39,11 +40,13 @@ p{
 	width: 100%;
 	padding: 5px;
 	color: var(--dark);
+	font-family: "The Antiqua B standard",Georgia,Droid-serif,serif;
 }
 .box-container1 .box h1 {
 	padding: 0 15px;
 	font-size: 50px;
 	color: var(--dark);
+	font-family: "The Antiqua B standard",Georgia,Droid-serif,serif;
 }
 
 /*------- CONTAINER 2 -------*/
@@ -54,7 +57,8 @@ p{
 	margin-right: 40px;
 }
 
-.box-Entrainement {
+
+#box-Entrainement {
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -70,6 +74,9 @@ p{
 	font-size: 42px;
 	color: var(--main);
 	background-color: var(--white);
+}
+#Entrainement:hover{
+	background-color: var(--main-alpha);
 }
 
 .box-container2 .box {
@@ -89,8 +96,9 @@ p{
 }
 
 .box-container2 .news_photo {
+	display: block;
 	margin: 0 10px;
-	width: 100px;
+	width: 120px;
 	height: 100px;
 	object-fit: cover;
 }
@@ -101,4 +109,9 @@ p{
 	width: 80%;
 	margin: 80px 10%;
 	background-color: var(--white);
+}
+
+.section{
+	width: 100%;
+	max-height: 100px;
 }
