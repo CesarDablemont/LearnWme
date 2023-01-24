@@ -4,11 +4,16 @@ body {
 	/* font-family: "Helvetica Neue",Helvetica,Arial,Roboto,sans-serif; */
 }
 
-p{
-	font-family: "Helvetica",Helvetica,Arial,Roboto,sans-serif;
-	font-size: 16px;
+
+h1, h2, h3, h4, h5, h6, p{
 	color: var(--dark);
+	font-family: "Helvetica",Helvetica,Arial,Roboto,sans-serif;
 }
+
+p{
+	font-size: 16px;
+}
+
 
 .container {
 	display: flex;
@@ -95,7 +100,6 @@ p{
 }
 
 .box-container2 .news_photo {
-	/* display: block; */
 	margin: 0 10px;
 	min-width: 100px;
 	max-height: 80px;
@@ -103,14 +107,39 @@ p{
 }
 
 /*------- SECTIONS -------*/
-.sections {
-	height: 100vh;
+.section-container {
 	width: 80%;
 	margin: 80px 10%;
+	padding: 20px;
 	background-color: var(--white);
 }
 
 .section{
+	border-top: solid 2px var(--dark);
 	width: 100%;
-	max-height: 100px;
+	min-height: 100px;
+}
+
+.section h1{
+	width: 100%;
+	padding-top: 15px;
+	margin-bottom: 15px;
+}
+
+.section-sousContainer{
+	display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: auto auto; 
+  gap: 20px 40px; 
+}
+
+.section-box{
+	min-height: 100px;
+	height: auto;
+}
+.section-box img{
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
 }
