@@ -74,13 +74,8 @@ body {
 	color: var(--dark);
 	background-color: var(--grey);
 	font-family: 'The Antiqua B standard', Georgia, Droid-serif, serif;
-	overflow:hidden;
-	border-radius: 0;
 }
-.box-container1 select option{
-	box-sizing: border-box;
-	overflow:hidden;
-}
+
 .box-container1 .box h1 {
 	padding: 0 10px;
 	font-size: 50px;
