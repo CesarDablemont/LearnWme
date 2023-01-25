@@ -67,14 +67,14 @@ body {
 	color: var(--dark);
 	font-family: 'The Antiqua B standard', Georgia, Droid-serif, serif;
 }
-.box-container1 select {
+/* .box-container1 select {
 	padding: 5px;
 	font-size: 18px;
 	font-weight: bold;
 	color: var(--dark);
 	background-color: var(--grey);
 	font-family: 'The Antiqua B standard', Georgia, Droid-serif, serif;
-}
+} */
 
 .box-container1 .box h1 {
 	padding: 0 10px;
@@ -153,8 +153,8 @@ body {
 .section-sousContainer {
 	display: grid;
 	grid-auto-columns: 1fr;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: auto auto;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
 	gap: 40px;
 }
 
