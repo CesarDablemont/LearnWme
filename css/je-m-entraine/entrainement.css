@@ -20,7 +20,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.box button{
+.box .button{
   position: absolute;
   width: 200px;
   height: 40px;
@@ -29,6 +29,9 @@ body {
   background-color: var(--white);
   border: 3px solid #D80228;
   border-radius: 15px;
+}
+.box .button:hover{
+  background-color: var(--main-alpha);
 }
 .box img{
   width: 100%;

@@ -10,9 +10,8 @@
 	padding: 0;
 	box-sizing: border-box;
 
-	/* --main: #D80228; */
-	--main: rgb(216, 2, 40);
-	--main-alpha: rgba(216, 2, 40, 0.05);
+	--main: #D80228;
+	--main-alpha: #fbe5e9;
 
 	--white: #ffffff;
 	--grey: #f5f3f1;
