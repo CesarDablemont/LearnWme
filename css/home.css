@@ -61,10 +61,25 @@ body {
 }
 .box-container1 .titre {
 	width: 100%;
-	/* height: 50px; */
 	padding: 5px;
+	font-size: 22px;
+	font-weight: bold;
 	color: var(--dark);
 	font-family: 'The Antiqua B standard', Georgia, Droid-serif, serif;
+}
+.box-container1 select {
+	padding: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	color: var(--dark);
+	background-color: var(--grey);
+	font-family: 'The Antiqua B standard', Georgia, Droid-serif, serif;
+	overflow:hidden;
+	border-radius: 0;
+}
+.box-container1 select option{
+	box-sizing: border-box;
+	overflow:hidden;
 }
 .box-container1 .box h1 {
 	padding: 0 10px;
