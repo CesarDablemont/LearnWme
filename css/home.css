@@ -100,12 +100,15 @@ body {
 	background-color: var(--grey);
 }
 #Entrainement {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 300px;
 	height: 100px;
-	border-radius: 30px;
-	border: solid 3px var(--main);
 	font-size: 32px;
 	color: var(--main);
+	border-radius: 30px;
+	border: solid 3px var(--main);
 	background-color: var(--white);
 }
 #Entrainement:hover {
