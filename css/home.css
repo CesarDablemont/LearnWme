@@ -1,3 +1,11 @@
+/*------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------ CORPS -----------------------------------------------*/
+body {
+	background-color: var(--grey);
+	font-family: 'Helvetica', Helvetica, Arial, Roboto, sans-serif;
+	/* font-family: "Helvetica Neue",Helvetica,Arial,Roboto,sans-serif; */
+}
+
 h1,h2,h3,h4,h5,h6 {
 	color: var(--dark);
 	font-family: 'The Antiqua B standard', Georgia, Droid-serif, serif;
@@ -6,13 +14,6 @@ p {
 	font-size: 13px;
 	color: var(--dark);
 	font-family: 'Helvetica', Helvetica, Arial, Roboto, sans-serif;
-}
-a {
-	text-decoration: none;
-	color: var(--dark);
-}
-a:hover {
-	color: var(--main);
 }
 .journalTag {
 	width: 25px;
@@ -23,14 +24,6 @@ a:hover {
 	width: 50px;
 	height: 25px;
 	margin: 5px 5px 5px 0;
-}
-
-/*------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------ CORPS -----------------------------------------------*/
-body {
-	background-color: var(--grey);
-	font-family: 'Helvetica', Helvetica, Arial, Roboto, sans-serif;
-	/* font-family: "Helvetica Neue",Helvetica,Arial,Roboto,sans-serif; */
 }
 
 .container {
