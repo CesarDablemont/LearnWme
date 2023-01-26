@@ -1,0 +1,12 @@
+body {
+	background-color: var(--grey);
+	font-family: 'Helvetica', Helvetica, Arial, Roboto, sans-serif;
+	/* font-family: "Helvetica Neue",Helvetica,Arial,Roboto,sans-serif; */
+}
+
+.body-container{
+  height: calc(100vh - 160px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
