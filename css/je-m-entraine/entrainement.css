@@ -5,10 +5,10 @@ body {
 }
 
 .box-container{
-  margin: 40px 20%;
+  margin: 40px 15%;
   display: grid;
 	grid-auto-columns: 1fr;
-	grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+	grid-template-columns: repeat(auto-fit, minmax(380px, auto));
 	grid-auto-rows: minmax(250px, auto);;
 	gap: 40px;
 }
