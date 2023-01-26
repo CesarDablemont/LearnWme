@@ -219,6 +219,13 @@ nav {
 	height: 25px;
 	margin: 5px 5px 5px 0;
 }
+#showCulture .image-align-left-liberation,
+#showVideo .image-align-left-liberation{
+	float : left;
+	width: 50px;
+	height: 25px;
+	margin: 5px 5px 5px 0;
+}
 
 #showCulture .container .box .news_photo,
 #showVideo .container .box .news_photo{
