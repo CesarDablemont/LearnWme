@@ -9,4 +9,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--white);
+}
+
+.body-container img{
+  position: absolute;
+  height: calc(100vh - 160px);
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
 }

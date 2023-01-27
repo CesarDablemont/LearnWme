@@ -156,20 +156,22 @@ p {
 .body .section-sousContainer {
 	display: grid;
 	grid-auto-columns: 1fr;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
 	grid-template-rows: auto;
 	gap: 40px;
 }
 
 .body .section-box {
 	min-height: 100px;
-	height: auto;
 }
 .body .section-box span{
 	display: flex;
 }
-.body .section-box h3{
+.body .section-box span h3{
 	margin-top: 7px;
+	overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .body .section-box .article-img {
 	width: 100%;
