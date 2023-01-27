@@ -16,6 +16,7 @@ p {
 	font-family: 'Helvetica', Helvetica, Arial, Roboto, sans-serif;
 }
 .journalTag {
+	float: left;
 	width: 25px;
 	height: 25px;
 	margin: 5px 5px 5px 0;
@@ -26,12 +27,13 @@ p {
 	margin: 5px 5px 5px 0;
 }
 
-.container {
+
+.body .container {
 	display: flex;
 	margin: 30px 0;
 }
 
-.box-container {
+.body .container .box-container {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
@@ -40,19 +42,19 @@ p {
 
 /*-------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------- CONTAINER 1 ---------------------------------------------*/
-.box-container1 {
+.body .box-container1 {
 	width: 55%;
 	margin: 0 30px;
 	background-color: var(--white);
 	padding: 15px;
 }
-.box-container1 .box {
+.body .box-container1 .box {
 	display: flex;
 	width: calc(100% / 3);
 	padding: 20px 10px;
 	height: auto;
 }
-.box-container1 .titre {
+.body .box-container1 .titre {
 	width: 100%;
 	padding: 5px;
 	font-size: 22px;
@@ -69,7 +71,7 @@ p {
 	font-family: 'The Antiqua B standard', Georgia, Droid-serif, serif;
 } */
 
-.box-container1 .box h1 {
+.body .box-container1 .box h1 {
 	padding: 0 10px;
 	font-size: 50px;
 	color: var(--dark);
@@ -78,7 +80,7 @@ p {
 
 /*-------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------- CONTAINER 2 ---------------------------------------------*/
-.box-container2 {
+.body .box-container2 {
 	display: flex;
 	width: 45%;
 	background-color: var(--white);
@@ -108,16 +110,19 @@ p {
 	background-color: var(--main-alpha);
 }
 
-.box-container2 .box {
+
+
+.body .box-container2 .box {
 	display: flex;
 	width: 50%;
 	padding: 20px 10px;
 }
-.box-container2 p {
+.body .box-container2 .box .article{
+	display: block;
 	text-align: justify;
 }
 
-.box-container2 .news_photo {
+.body .box-container2 .news_photo {
 	margin: 0 10px;
 	min-width: 100px;
 	max-height: 80px;
@@ -127,7 +132,7 @@ p {
 /*------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------- SECTIONS ----------------------------------------------*/
 
-.section-container {
+.body .section-container {
 	width: 80%;
 	margin: 40px 10%;
 	padding: 20px;
@@ -140,13 +145,15 @@ p {
 	min-height: 100px;
 	margin-bottom: 100px;
 }
-.section h1 {
+
+
+.body .section h1 {
 	width: 100%;
 	padding-top: 15px;
 	margin-bottom: 25px;
 }
 
-.section-sousContainer {
+.body .section-sousContainer {
 	display: grid;
 	grid-auto-columns: 1fr;
 	grid-template-columns: repeat(3, 1fr);
@@ -154,18 +161,21 @@ p {
 	gap: 40px;
 }
 
-.section-box {
+.body .section-box {
 	min-height: 100px;
 	height: auto;
 }
-.section-box span{
+.body .section-box span{
 	display: flex;
 }
-.section-box h3{
+.body .section-box h3{
 	margin-top: 7px;
 }
-.section-box .article-img {
+.body .section-box .article-img {
 	width: 100%;
 	height: 200px;
 	object-fit: cover;
+}
+.body .section-box p {
+	text-align: justify;
 }
