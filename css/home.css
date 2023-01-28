@@ -180,4 +180,9 @@ p {
 }
 .body .section-box p {
 	text-align: justify;
+	/* https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp */
+	display: -webkit-box;
+  -webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
 }
