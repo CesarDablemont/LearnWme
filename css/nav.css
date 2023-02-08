@@ -27,6 +27,16 @@
 	--footer: #202123;
 }
 
+h1,h2,h3,h4,h5,h6 {
+	color: var(--dark);
+	font-family: 'The Antiqua B standard', Georgia, Droid-serif, serif;
+}
+p {
+	font-size: 13px;
+	color: var(--dark);
+	font-family: 'Helvetica', Helvetica, Arial, Roboto, sans-serif;
+}
+
 /*----------- NAV --------- */
 nav {
 	width: auto;
