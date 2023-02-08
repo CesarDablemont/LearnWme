@@ -8,13 +8,14 @@ body {
 
 .journalTag {
 	float: left;
-	width: 25px;
-	height: 25px;
-	margin: 5px 5px 5px 0;
+	width: 20px;
+	height: 20px;
+	margin: 5px 5px 0px 0;
 }
 .journalTagLiberation{
+	float: left;
 	width: 50px;
-	height: 25px;
+	height: 20px;
 	margin: 5px 5px 5px 0;
 }
 
@@ -137,7 +138,6 @@ body {
 	margin-bottom: 100px;
 }
 
-
 .body .section h1 {
 	width: 100%;
 	padding-top: 15px;
@@ -159,10 +159,17 @@ body {
 	display: flex;
 }
 .body .section-box span h3{
+	text-align: justify;
 	margin-top: 7px;
-	overflow: hidden;
+
+	/* overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis; */
+
+	display: -webkit-box;
+  -webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
 }
 .body .section-box .article-img {
 	width: 100%;
