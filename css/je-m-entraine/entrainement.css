@@ -27,11 +27,14 @@ body {
   font-size: 16px;
   color: var(--main);
   background-color: var(--white);
-  border: 3px solid #D80228;
+  border: 3px solid var(--main);
   border-radius: 15px;
+  transition-duration: 0.5s;
 }
 .box-container .box .button:hover{
   background-color: var(--main-alpha);
+  letter-spacing: 0.02em;
+	transition-duration: 0.5s;
 }
 .box-container .box img{
   width: 100%;

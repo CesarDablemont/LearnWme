@@ -12,8 +12,12 @@
 	--lh: 1.2em;
   line-height: var(--lh);
 
-	--main: #D80228;
-	--main-alpha: #fdf2f4;
+	/* --main: #D80228; */
+	/* --main: #53da79; */
+	--main: #4169E1;
+
+	/* --main-alpha: #fdf2f4; */
+	--main-alpha: #ecf0fc;
 
 	--white: #ffffff;
 	--grey: #f5f3f1;

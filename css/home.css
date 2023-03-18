@@ -97,9 +97,12 @@ body {
 	border-radius: 30px;
 	border: solid 3px var(--main);
 	background-color: var(--white);
+	transition-duration: 0.5s;
 }
 #Entrainement:hover {
 	background-color: var(--main-alpha);
+	letter-spacing: 0.02em;
+	transition-duration: 0.5s;
 }
 
 
