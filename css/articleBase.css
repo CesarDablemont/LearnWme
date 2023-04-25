@@ -1,0 +1,17 @@
+body {
+	background-color: var(--grey);
+	font-family: 'Helvetica', Helvetica, Arial, Roboto, sans-serif;
+	/* font-family: "Helvetica Neue",Helvetica,Arial,Roboto,sans-serif; */
+}
+
+.article-container{
+	display: flex;
+	justify-content: center;
+	margin: 50px 20px;
+}
+
+.box-article{
+	justify-content: center;
+	max-width: 1000px;
+}
+
