@@ -28,8 +28,8 @@ async function initArticlePage() {
     ${articles[articleIndex].title}
     <br><br>
 
-    <h3>description:</h3>
-    ${articles[articleIndex].description}
+    <h3>auteur:</h3>
+    ${articles[articleIndex].author}
     <br><br>
 
     <h3>chapeau:</h3>
