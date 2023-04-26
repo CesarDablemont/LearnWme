@@ -37,7 +37,7 @@ async function initArticlePage() {
     <br><br>
 
     <h3>image:</h3>
-    <img src=${articles[articleIndex].image}>
+    <img class="imgArticleMain" src=${articles[articleIndex].image}>
     <br><br>
 
     <h3>corps:</h3>
@@ -50,7 +50,6 @@ async function initArticlePage() {
 
 };
 
-
 //Renvoie l'index de l'article et renvoie -1 si l'article n'existe pas
 function indexOfArticle(title) {
   for (var i = 0; i < articles.length; i++) {
@@ -61,3 +60,8 @@ function indexOfArticle(title) {
 
 
 initArticlePage();
+
+//Boutton pour revenir à la page précédente
+document.getElementById("go-back").addEventListener("click", () => {
+  history.back();
+});

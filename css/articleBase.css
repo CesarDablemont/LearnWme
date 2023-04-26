@@ -2,16 +2,27 @@ body {
 	background-color: var(--grey);
 	font-family: 'Helvetica', Helvetica, Arial, Roboto, sans-serif;
 	/* font-family: "Helvetica Neue",Helvetica,Arial,Roboto,sans-serif; */
+	text-align: justify;
 }
 
-.article-container{
+#go-back {
+	padding: 10px 20px;
+	font-size: 16px;
+	margin: 20px;
+	position: absolute;
+}
+
+.article-container {
 	display: flex;
 	justify-content: center;
 	margin: 50px 20px;
 }
 
-.box-article{
+.box-article {
 	justify-content: center;
 	max-width: 1000px;
 }
 
+.imgArticleMain {
+	width: 50%;
+}
