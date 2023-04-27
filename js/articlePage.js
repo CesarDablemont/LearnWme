@@ -6,7 +6,7 @@ var articles = null;
 async function initArticlePage() {
 
   try {
-    const response = await fetch('../../data/article.json');
+    const response = await fetch('../../data/articles.json');
     articles = await response.json();
   } catch (error) {
     console.log("error");
@@ -15,7 +15,9 @@ async function initArticlePage() {
   }
 
   articleIndex = indexOfArticle(product);
+
   let output = "";
+  let date = parseInt(articles[articleIndex].date);
 
   output += `
   <div>
@@ -26,6 +28,14 @@ async function initArticlePage() {
 
     <h3>auteur:</h3>
     ${articles[articleIndex].author}
+    <br><br>
+
+    <h3>publier le:</h3>
+    ${formatDate(date)}
+    <br><br>
+
+    <h3>journal:</h3>
+    ${articles[articleIndex].newspaper}
     <br><br>
 
     <h3>chapeau:</h3>
@@ -52,6 +62,11 @@ function indexOfArticle(title) {
     if (articles[i].title == title) return i;
   }
   return -1;
+};
+
+//Formate la date (MM/dd/yyyy)
+function formatDate(date) {
+  return new Date(date).toLocaleDateString("fr");
 };
 
 

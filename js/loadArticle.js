@@ -1,15 +1,19 @@
 let http = new XMLHttpRequest();
 
-http.open('GET', '../../data/article.json', true);
+http.open('GET', '../../data/articles.json', true);
 http.send();
 
 http.onload = function () {
 
   if (this.readyState == 4 && this.status == 200) {
-    let article = JSON.parse(this.responseText);
+    let articles = JSON.parse(this.responseText);
     let output = "";
 
-    for (let item of article) {
+    articles.sort(function (a, b) {
+      return b.date - a.date;
+    });
+
+    for (let item of articles) {
       for (let i = 0; i < item.category.length; i++) {
 
         if (item.category[i] == filter) {
