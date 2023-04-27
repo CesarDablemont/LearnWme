@@ -17,7 +17,7 @@ async function initArticlePage() {
   articleIndex = indexOfArticle(product);
 
   let output = "";
-  let date = parseInt(articles[articleIndex].date);
+  let date = new Date(parseInt(articles[articleIndex].date));
 
   output += `
   <div>
@@ -56,6 +56,7 @@ async function initArticlePage() {
 
 };
 
+
 //Renvoie l'index de l'article et renvoie -1 si l'article n'existe pas
 function indexOfArticle(title) {
   for (var i = 0; i < articles.length; i++) {
@@ -64,11 +65,27 @@ function indexOfArticle(title) {
   return -1;
 };
 
-//Formate la date (MM/dd/yyyy)
-function formatDate(date) {
-  return new Date(date).toLocaleDateString("fr");
-};
+//Formate les nombres à un chiffre (7 => 07, 10 => 10)
+function padTo2Digits(num) {
+  return num.toString().padStart(2, '0');
+}
 
+//Formate la date (MM/dd/yyyy à hh/mm/ss)
+function formatDate(date) {
+  return (
+    [
+      padTo2Digits(date.getDate()),
+      padTo2Digits(date.getMonth() + 1),
+      date.getFullYear(),
+    ].join('/') +
+    ' à ' +
+    [
+      padTo2Digits(date.getHours()),
+      padTo2Digits(date.getMinutes()),
+      padTo2Digits(date.getSeconds()),
+    ].join(':')
+  );
+}
 
 initArticlePage();
 
