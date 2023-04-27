@@ -21,7 +21,7 @@ body {
 }
 
 /*------ GRID ------*/
-.main-grid{
+#main-grid{
 	margin-top: 70px;
   display: grid;
 	width: 1100px;

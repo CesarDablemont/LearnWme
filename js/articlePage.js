@@ -15,10 +15,6 @@ async function initArticlePage() {
   }
 
   articleIndex = indexOfArticle(product);
-  console.log("articleIndex: ", articleIndex);
-  console.log("titre: ", articles[articleIndex].title);
-  console.log("description: ", articles[articleIndex].description);
-
   let output = "";
 
   output += `
