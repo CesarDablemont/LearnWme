@@ -20,14 +20,14 @@ http.onload = function () {
 
           output += `
           <div class="main-grid-item">
-          <a href= "../../html/articleBase.html?select=${item.title}">
-            <img class="image" src="${item.image}" alt="">
-            <h5 class="title">
-              ${item.title}
-            </h5>
+            <a href="../../html/articleBase.html?select=${item.title}">
+              <img class="image" src="${item.image}" alt="">
+              <h5 class="title">
+                ${item.title}
+              </h5>
             </a>
           </div>
-        `;
+          `;
 
         }
       };
