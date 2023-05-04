@@ -70,7 +70,7 @@ function padTo2Digits(num) {
   return num.toString().padStart(2, '0');
 }
 
-//Formate la date (MM/dd/yyyy à hh/mm/ss)
+//Formate la date (MM/dd/yyyy à hh:mm:ss)
 function formatDate(date) {
   return (
     [
