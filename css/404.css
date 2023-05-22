@@ -9,6 +9,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.body-container h1 {
   color: var(--white);
 }
 
